@@ -7,7 +7,9 @@ EcoSort patrols a designated area, detects litter through ultrasonic sensors and
 Built over a 14-week semester at NYU Tandon by Adam Gosine.
 
 ---
+![EcoSort Isometric View](cad/ecosort_isometric.png)
 
+*Mecanum-wheel chassis with rear-mounted electronics bay (Pi 4, Arduino, L298N), front dustpan-style scoop driven by twin servo arms, and an external LCD status display. Built on a VEX skeleton with 3D-printed PLA scoop/arms and laser-cut wood housing.*
 ## Demo
 
 Coming soon.
