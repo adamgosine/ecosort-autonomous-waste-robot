@@ -53,7 +53,7 @@ The Pi and Arduino communicate over USB serial at 9600 baud. The Pi sends high-l
 <p align="center">
   <img src="docs/architecture.png" alt="Architecture Diagram" width="100%">
 </p>
----
+
 ## Wiring at a glance
 
 - **Pi 4 ↔ Arduino UNO:** USB serial @ 9600 baud
