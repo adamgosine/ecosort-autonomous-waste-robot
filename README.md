@@ -28,7 +28,6 @@ ecosort/
 ├── perception/         # Raspberry Pi 4 — Python control + ML inference
 │   ├── main.py             # Main FSM: patrol → detect → classify → collect → log
 │   ├── dashboard.py        # Flask analytics dashboard
-│   ├── test_demo.py        # Standalone dashboard demo (no robot needed)
 │   ├── requirements.txt    # Python dependencies
 │   └── model.tflite        # MobileNetV2 classifier (3-class waste model)
 ├── firmware/           # Arduino UNO — real-time motor + sensor control
@@ -55,7 +54,7 @@ The Pi and Arduino communicate over USB serial at 9600 baud. The Pi sends high-l
   <img src="docs/architecture.png" alt="Architecture Diagram" width="100%">
 </p>
 ---
-### Wiring at a glance
+## Wiring at a glance
 
 - **Pi 4 ↔ Arduino UNO:** USB serial @ 9600 baud
 - **Pi Camera ↔ Pi 4:** CSI ribbon
@@ -108,7 +107,7 @@ Total project value: ~$300. Out-of-pocket cost: ~$80 (the rest sourced from inst
 ## Results
 
 - **Classification accuracy:** 70-90% across plastic, paper, and organic waste classes
-- **Inference rate:** ~12 FPS on Raspberry Pi 4 (no GPU)
+- **Inference rate:** ~12 FPS on Raspberry Pi 4 
 - **Obstacle response latency:** <50 ms ultrasonic poll-to-stop
 - **Dashboard update latency:** ~1 second from classification event to browser refresh
 - **Demo:** Successfully patrolled, detected, classified, and collected plastic, paper, and organic waste samples on a 30-second test run
