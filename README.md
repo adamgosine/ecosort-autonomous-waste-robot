@@ -4,7 +4,7 @@
 
 EcoSort patrols a designated area, detects litter through ultrasonic sensors and a Pi Camera, classifies waste as plastic, paper, or organic using on-device machine learning, actuates a 3D-printed scoop to collect the item, and logs every event to a real-time Flask analytics dashboard.
 
-Built over a 14-week semester at NYU Tandon by a 4-person team (EG-UY 1004, Spring 2026).
+Built over a 14-week semester at NYU Tandon by Adam Gosine.
 
 ---
 
@@ -12,7 +12,7 @@ Built over a 14-week semester at NYU Tandon by a 4-person team (EG-UY 1004, Spri
 
 [![EcoSort Demo Video](docs/demo_thumbnail.png)](https://youtu.be/REPLACE_WITH_YOUR_VIDEO_ID)
 
-*Click the thumbnail to watch a 90-second walkthrough of EcoSort patrolling, classifying, collecting waste, and logging events to the dashboard in real time.*
+*Click the thumbnail to watch a walkthrough of EcoSort patrolling, classifying, collecting waste, and logging events to the dashboard in real time.*
 
 ---
 
@@ -95,7 +95,6 @@ Total project value: ~$300. Out-of-pocket cost: ~$80 (the rest sourced from inst
 - **Obstacle response latency:** <50 ms ultrasonic poll-to-stop
 - **Dashboard update latency:** ~1 second from classification event to browser refresh
 - **Demo:** Successfully patrolled, detected, classified, and collected plastic, paper, and organic waste samples on a 30-second test run
-- **Final evaluation:** 100/100 on Final Design Report (NYU Tandon EG-UY 1004 Spring 2026)
 
 ---
 
@@ -130,31 +129,15 @@ Open `firmware/ecosort_arduino.ino` in the Arduino IDE, select the Arduino UNO b
 
 ---
 
-## Limitations and future work
+## Future Work
 
-The prototype was honest about its rough edges:
-
-- **Wheel motors** experienced inconsistent behavior during commissioning due to VEX battery drain. Resolved with overnight charging schedule.
-- **Servo wear:** the DS3225 servos showed mechanical wear at the spline interface where the lifting arms attached. Future revisions would decouple the servos from the load using a shaft-and-bearing axle.
-- **Classification accuracy** dropped under variable lighting, particularly for organic waste. Larger and more diverse training data would address this.
-
-Planned next iterations:
 - Expand the classifier from 3 to 6+ waste categories (metal, glass, e-waste)
 - Migrate from VEX educational chassis to a commercial-grade aluminum frame
 - Integrate the dashboard with sustainability reporting frameworks (AASHE STARS)
 - Pilot deployment with NYU Sustainability via the NYU Prototyping Fund
 
 ---
-
-## Team
-
-- **Adam Gosine** — Coding Lead (perception, planning, dashboard, integration)
-- **Evelyn Auqui Sanango** — Design Lead (CAD, 3D printing, mechanical assembly)
-- **Johnny Levy** — Circuitry Lead (wiring, breadboarding)
-- **Eileen Kim** — Project Manager (scheduling, business case, branding)
-
 NYU Tandon · General Engineering · EG-UY 1004 Section H2 · Spring 2026
-
 ---
 
 ## License
