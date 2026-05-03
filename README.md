@@ -49,8 +49,9 @@ EcoSort is built as a three-layer autonomy stack, mirroring the architectural pa
 
 The Pi and Arduino communicate over USB serial at 9600 baud. The Pi sends high-level commands (`FWD`, `STOP`, `TURN_L`, `SCOOP_OPEN`) and the Arduino executes them with PWM signals.
 
-![Architecture Diagram](docs/architecture.png)
-
+<p align="center">
+  <img src="docs/architecture.png" alt="Architecture Diagram" width="100%">
+</p>
 ---
 ### Wiring at a glance
 
