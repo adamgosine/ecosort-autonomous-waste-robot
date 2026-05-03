@@ -10,12 +10,15 @@ Built over a 14-week semester at NYU Tandon by Adam Gosine.
 
 ## Demo
 
-[![EcoSort Demo Video](docs/demo_thumbnail.png)](https://youtu.be/REPLACE_WITH_YOUR_VIDEO_ID)
-
-*Click the thumbnail to watch a walkthrough of EcoSort patrolling, classifying, collecting waste, and logging events to the dashboard in real time.*
+Coming soon.
 
 ---
 
+### Live Dashboard
+
+![EcoSort Dashboard](docs/dashboard_screenshot.png)
+
+The Flask analytics dashboard updates in real time as the robot patrols and classifies waste. Tracks daily totals, classification accuracy, waste-type breakdown, campus hotspots, and live event log per detection.
 ## What's in this repo
 
 ```
@@ -49,6 +52,17 @@ The Pi and Arduino communicate over USB serial at 9600 baud. The Pi sends high-l
 ![Architecture Diagram](docs/architecture.png)
 
 ---
+### Wiring at a glance
+
+- **Pi 4 ↔ Arduino UNO:** USB serial @ 9600 baud
+- **Pi Camera ↔ Pi 4:** CSI ribbon
+- **Arduino ↔ L298N:** PWM (D5, D6, D11) for motor speed/direction
+- **L298N ↔ VEX 393 motors:** OUT1-4, powered by 7.2V VEX NiMH battery
+- **Arduino ↔ HC-SR04 ×3:** D2/D4/D7 trigger, A0/A1/A2 echo
+- **Arduino ↔ DS3225 servos:** D3, D8 PWM
+- **Arduino ↔ LCD 16×2:** I2C via SDA/SCL
+
+Full pin-level details available in `firmware/ecosort_arduino.ino`.
 
 ## Bill of materials
 
