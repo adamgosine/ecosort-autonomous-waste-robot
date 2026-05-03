@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Logs and runtime data
+*.log
+classifications.json
+*.pid
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Arduino
+*.hex
+build/
+
+# OS
+Thumbs.db

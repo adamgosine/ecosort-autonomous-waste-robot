@@ -1,0 +1,8 @@
+tflite-runtime
+opencv-python
+picamera2
+pyserial
+flask
+numpy
+RPLCD
+smbus2
