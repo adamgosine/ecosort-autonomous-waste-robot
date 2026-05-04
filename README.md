@@ -40,8 +40,6 @@ ecosort/
 
 ## Architecture
 
-EcoSort is built as a three-layer autonomy stack, mirroring the architectural pattern used in industrial robotics (compute platform on top, real-time controller underneath):
-
 | Layer | Hardware | Software | Responsibility |
 |---|---|---|---|
 | **Perception** | Raspberry Pi 4 + Pi Camera | TensorFlow Lite, OpenCV, MobileNetV2 | Captures frames, runs on-device ML inference at ~12 FPS, classifies waste into plastic / paper / organic |
