@@ -25,15 +25,15 @@ The Flask analytics dashboard updates in real time as the robot patrols and clas
 
 ```
 ecosort/
-├── perception/         # Raspberry Pi 4 — Python control + ML inference
+├── perception/         # Raspberry Pi 4: Python control + ML inference
 │   ├── main.py             # Main FSM: patrol → detect → classify → collect → log
 │   ├── dashboard.py        # Flask analytics dashboard
-│   ├── requirements.txt    # Python dependencies
+│   ├── requirements.txt    
 │   └── model.tflite        # MobileNetV2 classifier (3-class waste model)
-├── firmware/           # Arduino UNO — real-time motor + sensor control
+├── firmware/           # Arduino UNO: real-time motor + sensor control
 │   └── ecosort_arduino.ino
-├── docs/               # Architecture diagrams, circuit, flowchart
-└── cad/                # 3D model references
+├── docs/               # Architecture diagrams
+└── cad/               
 ```
 
 ---
