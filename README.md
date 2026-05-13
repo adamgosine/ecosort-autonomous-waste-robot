@@ -4,7 +4,7 @@
 
 EcoSort patrols a designated area, detects litter through ultrasonic sensors and a Pi Camera, classifies waste as plastic, paper, or organic using on-device machine learning, actuates a 3D-printed scoop to collect the item, and logs every event to a real-time Flask analytics dashboard.
 
-Built over a 14-week semester at NYU Tandon by Adam Gosine.
+Built over a 14-week semester at NYU Tandon.
 
 ---
 ![EcoSort Isometric View](cad/ecosort_isometric.png)
